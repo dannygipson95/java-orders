@@ -545,11 +545,22 @@ public class SeedData implements CommandLineRunner {
             customer.setCustname(custName);
 
             int randomInt = random.nextInt(10);
+            int rand3 = random.nextInt(4);
+            int rand12 = random.nextInt(13);
             for (int j = 0; j < randomInt; j++){
                 customer.getOrders()
                         .add(new Order(10.00, 100.00, customer, ""));
             }
+            customer.setCustcity("Bangalore");
+            customer.setCustcountry("India");
+            customer.setGrade(Integer.toString(rand3));
+            customer.setOpeningamt(randomInt*1000.0);
+            customer.setOutstandingamt(randomInt*1000.0);
+            customer.setPaymentamt(rand3*1000.0);
+            customer.setPhone("(317)867-5309");
+            customer.setWorkingarea("Bangalore");
             customer.setAgent(a01);
+            customer.setReceiveamt(rand12*1000);
             custrepos.save(customer);
         }
     }

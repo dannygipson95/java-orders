@@ -19,7 +19,7 @@ public class Customer {
 
     private String workingarea;
 
-    private String custcouontry;
+    private String custcountry;
 
     private String grade;
 
@@ -31,7 +31,6 @@ public class Customer {
 
     private double outstandingamt;
 
-    @Column(unique = true)
     private String phone;
 
     @ManyToOne
@@ -55,7 +54,7 @@ public class Customer {
         this.custname = custname;
         this.custcity = custcity;
         this.workingarea = workingarea;
-        this.custcouontry = custcouontry;
+        this.custcountry = custcountry;
         this.grade = grade;
         this.openingamt = openingamt;
         this.receiveamt = receiveamt;
@@ -97,12 +96,12 @@ public class Customer {
         this.workingarea = workingarea;
     }
 
-    public String getCustcouontry() {
-        return custcouontry;
+    public String getCustcountry() {
+        return custcountry;
     }
 
-    public void setCustcouontry(String custcouontry) {
-        this.custcouontry = custcouontry;
+    public void setCustcountry(String custcouontry) {
+        this.custcountry = custcouontry;
     }
 
     public String getGrade() {
