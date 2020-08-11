@@ -46,11 +46,10 @@ public class Customer {
 
     public Customer(String custname,
                     String custcity, String workingarea,
-                    String custcouontry, String grade,
+                    String custcountry, String grade,
                     double openingamt, double receiveamt,
                     double paymentamt, double outstandingamt,
                     String phone, Agent agent) {
-        this.custcode = custcode;
         this.custname = custname;
         this.custcity = custcity;
         this.workingarea = workingarea;
@@ -100,8 +99,8 @@ public class Customer {
         return custcountry;
     }
 
-    public void setCustcountry(String custcouontry) {
-        this.custcountry = custcouontry;
+    public void setCustcountry(String custcountry) {
+        this.custcountry = custcountry;
     }
 
     public String getGrade() {
